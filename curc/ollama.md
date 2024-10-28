@@ -12,14 +12,15 @@
     mkdir -p /projects/$USER/ollama
     cd /projects/$USER/ollama
     ```
-2. Note the latest Ollama binary version on GitHub. Download the binary:
+2. Note the latest Ollama version on GitHub. Download the linux distribution and unzip it:
     ```bash
-    export ollama_ver="v0.3.3"
-    curl -L https://github.com/ollama/ollama/releases/download/${ollama_ver}/ollama-linux-amd64 -o ollama
+    export ollama_ver="v0.3.14"
+    curl -L https://github.com/ollama/ollama/releases/download/${ollama_ver}/ollama-linux-amd64.tgz -o ollama
+    tar -xzvf ollama
    ```
 3. Make the binary executable:
     ```bash
-    chmod +x ollama
+    chmod +x ./bin/ollama
     ```
 4. Start up an interactive job on CURC:
     ```bash
@@ -28,7 +29,7 @@
    Note that the `--ntasks` and `--mem` values are just placeholders and not optimized. Adjust them as needed. Make sure you allocate enough GPUs such that you have sufficient VRAM to run your model of choice. <br/><br/>
 5. Add the following to your `~/.bashrc` file. Update the paths as needed.
     ```bash
-    export PATH="$PATH:/projects/$USER/ollama"
+    export PATH="$PATH:/projects/$USER/ollama/bin"
     export OLLAMA_TMPDIR="/rc_scratch/$USER/ollama_temp"
     export OLLAMA_MODELS="/rc_scratch/$USER/ollama/models"
     export OLLAMA_HOST="0.0.0.0:9999"
