@@ -13,7 +13,7 @@
     mkdir -p /projects/$USER/ollama
     cd /projects/$USER/ollama
     ```
-2. Note the latest Ollama version on GitHub. Download the linux distribution and unzip it:
+2. Note the latest Ollama version on [GitHub](https://github.com/ollama/ollama/releases/latest). Download the linux distribution and unzip it:
     ```bash
     export ollama_ver="v0.3.14"
     curl -L https://github.com/ollama/ollama/releases/download/${ollama_ver}/ollama-linux-amd64.tgz -o ollama
