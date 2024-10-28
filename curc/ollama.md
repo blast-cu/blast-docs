@@ -1,9 +1,10 @@
 # Ollama Setup on CURC
 
 ## Links
-- ### [Ollama](https://ollama.com/)
+- ### [Ollama Website](https://ollama.com/)
 - ### [Ollama GitHub](https://github.com/ollama/ollama)
 - ### [Ollama REST API](https://github.com/ollama/ollama/blob/main/docs/api.md)
+- ### [Ollama Python Library](https://github.com/ollama/ollama-python)
 
 ## Setup
 
