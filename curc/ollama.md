@@ -31,8 +31,8 @@
 5. Add the following to your `~/.bashrc` file. Update the paths as needed.
     ```bash
     export PATH="$PATH:/projects/$USER/ollama/bin"
-    export OLLAMA_TMPDIR="/rc_scratch/$USER/ollama_temp"
-    export OLLAMA_MODELS="/rc_scratch/$USER/ollama/models"
+    export OLLAMA_TMPDIR="/scratch/alpine/$USER/ollama_temp"
+    export OLLAMA_MODELS="/scratch/alpine/$USER/ollama/models"
     export OLLAMA_HOST="0.0.0.0:9999"
     export OLLAMA_NUM_PARALLEL=1
     export OLLAMA_MAX_LOADED_MODELs=1
